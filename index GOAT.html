@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CFB SRS Championship Teams</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 16px;
+    }
+    h1 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+    .table-wrap {
+      overflow-x: auto;
+    }
+    table.dataTable thead th {
+      white-space: nowrap;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Top College Football Teams by SRS</h1>
+
+<div class="table-wrap">
+<table id="cfb" class="display" style="width:100%">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>School</th>
+      <th>Coach</th>
+      <th>Wins</th>
+      <th>SRS</th>
+      <th>Points For</th>
+      <th>Points Against</th>
+      <th>Difference</th>
+      <th>SOS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1995</td><td>Nebraska</td><td>Tom Osbourne</td><td>12</td><td>26.86</td><td>52.4</td><td>13.6</td><td>38.8</td><td>22.2%</td></tr>
+    <tr><td>2020</td><td>Alabama</td><td>Nick Saban</td><td>13</td><td>30.26</td><td>48.5</td><td>19.4</td><td>29.1</td><td>2.3%</td></tr>
+    <tr><td>2013</td><td>Florida State</td><td>Jimbo Fisher</td><td>14</td><td>23.36</td><td>51.6</td><td>12.1</td><td>39.5</td><td>47.2%</td></tr>
+    <tr><td>2001</td><td>Miami (Fla.)</td><td>Larry Coker</td><td>12</td><td>26.17</td><td>43.2</td><td>9.4</td><td>33.8</td><td>18.8%</td></tr>
+    <tr><td>2018</td><td>Clemson</td><td>Dabo Swinney</td><td>15</td><td>26.45</td><td>44.3</td><td>13.1</td><td>31.2</td><td>14.6%</td></tr>
+    <tr><td>2005</td><td>Texas</td><td>Mack Brown</td><td>13</td><td>24.98</td><td>50.2</td><td>16.4</td><td>33.8</td><td>19.3%</td></tr>
+    <tr><td>2025</td><td>Indiana</td><td>Curt Cignetti</td><td>16</td><td>25.35</td><td>41.6</td><td>11.7</td><td>29.9</td><td>5.1%</td></tr>
+    <tr><td>2019</td><td>LSU</td><td>Ed Orgeron</td><td>15</td><td>25.8</td><td>48.4</td><td>21.9</td><td>26.5</td><td>4.6%</td></tr>
+    <tr><td>2022</td><td>Georgia</td><td>Kirby Smart</td><td>15</td><td>25.48</td><td>41.1</td><td>14.3</td><td>26.8</td><td>8.4%</td></tr>
+    <tr><td>2004</td><td>USC*</td><td>Pete Carroll</td><td>13</td><td>26.06</td><td>38.2</td><td>13</td><td>25.2</td><td>4.2%</td></tr>
+    <tr><td>2023</td><td>Michigan</td><td>Jim Harbaugh</td><td>15</td><td>25.01</td><td>35.9</td><td>10.4</td><td>25.5</td><td>6.0%</td></tr>
+    <tr><td>1997</td><td>Nebraska</td><td>Tom Osbourne</td><td>13</td><td>22.3</td><td>47.1</td><td>16.4</td><td>30.7</td><td>36.6%</td></tr>
+    <tr><td>1991</td><td>Miami (Fla.)</td><td>Dennis Erickson</td><td>12</td><td>23.75</td><td>33.1</td><td>9.1</td><td>24</td><td>24.3%</td></tr>
+    <tr><td>1987</td><td>Miami (Fla.)</td><td>Jimmy Johnson</td><td>12</td><td>22.73</td><td>35.6</td><td>10.1</td><td>25.5</td><td>21.2%</td></tr>
+    <tr><td>2009</td><td>Alabama</td><td>Nick Saban</td><td>14</td><td>23.69</td><td>32.1</td><td>11.7</td><td>20.4</td><td>1.7%</td></tr>
+    <tr><td>1999</td><td>Florida State</td><td>Bobby Bowden</td><td>12</td><td>23.5</td><td>37.5</td><td>15.8</td><td>21.7</td><td>11.4%</td></tr>
+    <tr><td>1988</td><td>Notre Dame</td><td>Lou Holtz</td><td>12</td><td>24.35</td><td>32.6</td><td>12.3</td><td>20.3</td><td>1.9%</td></tr>
+    <tr><td>2000</td><td>Oklahoma</td><td>Bob Stoops</td><td>13</td><td>21.55</td><td>39</td><td>16</td><td>23</td><td>12.1%</td></tr>
+    <tr><td>1994</td><td>Nebraska</td><td>Tom Osbourne</td><td>13</td><td>20.65</td><td>36.2</td><td>12.1</td><td>24.1</td><td>37.4%</td></tr>
+    <tr><td>1986</td><td>Penn State</td><td>Joe Paterno</td><td>12</td><td>22.16</td><td>29.6</td><td>11.2</td><td>18.4</td><td>12.4%</td></tr>
+    <tr><td>1998</td><td>Tennessee</td><td>Phillip Fulmer</td><td>13</td><td>19.95</td><td>34</td><td>14.4</td><td>19.6</td><td>23.2%</td></tr>
+    <tr><td>2010</td><td>Auburn</td><td>Gene Chizik</td><td>14</td><td>20.66</td><td>41.2</td><td>24.1</td><td>17.1</td><td>7.5%</td></tr>
+    <tr><td>1997</td><td>Michigan</td><td>Lloyd Carr</td><td>12</td><td>20.14</td><td>27.4</td><td>8.9</td><td>18.5</td><td>28.6%</td></tr>
+    <tr><td>1992</td><td>Alabama</td><td>Gene Stallings</td><td>13</td><td>18.97</td><td>27.7</td><td>9.1</td><td>18.6</td><td>29.9%</td></tr>
+    <tr><td>2002</td><td>Ohio State</td><td>Jim Tressel</td><td>14</td><td>18.13</td><td>29.3</td><td>13.1</td><td>16.2</td><td>17.9%</td></tr>
+  </tbody>
+</table>
+</div>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- DataTables JS -->
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $('#cfb').DataTable({
+      pageLength: 25,
+      order: [[4, 'desc']], // default sort by SRS
+      scrollX: true
+    });
+  });
+</script>
+
+</body>
+</html>
